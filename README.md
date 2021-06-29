@@ -19,6 +19,8 @@
 ## 目录树
 ```
  .
+├── client
+│   └──client.zip             Win32客户端程序
 ├── bin_cgi                   可执行cgi程序文件夹
 │   └──
 ├── include                   common文件夹对应头文件
@@ -62,7 +64,6 @@
 ├── fcgi.sh                   cgi程序启动脚本，一个cgi程序一个进程
 ├── nginx.sh                  nginx启动脚本
 ├── start.sh                  服务器启动脚本
-├── client.rar                Win32客户端程序
 ├── Makefile
 └── README.md
 ```
@@ -148,4 +149,4 @@
     sudo ./start.sh
 
 ## 客户端下载运行
-项目提供了一个Windows平台可执行的客户端exe程序，下载后点击CloudDisk.exe即可运行，注册登录后，即可上传下载分享文件
+项目提供了一个Windows平台可执行的客户端exe程序，下载解压后点击CloudDisk.exe即可运行，注册登录后，即可上传下载分享文件
