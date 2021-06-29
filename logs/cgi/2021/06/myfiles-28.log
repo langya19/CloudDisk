@@ -1,0 +1,312 @@
+[2021-06-28 09:21:01]--[src_cgi/myfiles_cgi.c:40]--mysql:[user=root,pwd=zzc123,database=cloud_disk][2021-06-28 09:22:38]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-06-28 09:22:38]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "917ba66247b5fbcc88a06e2ed6590734",
+    "user": "zzc"
+}
+
+[2021-06-28 09:22:38]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2021-06-28 09:22:38]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2021-06-28 09:22:38]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "917ba66247b5fbcc88a06e2ed6590734",
+    "user": "zzc"
+}
+
+[2021-06-28 09:22:38]--[src_cgi/myfiles_cgi.c:548]--user = zzc, token = 917ba66247b5fbcc88a06e2ed6590734, start = 0, count = 1
+[2021-06-28 09:22:38]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'zzc' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2021-06-28 09:22:38]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"zzc",
+			"md5":	"8bbda9083bb20e64b0436ac29f56f277",
+			"time":	"2021-06-27 16:24:12",
+			"filename":	"cloud-disk.tar.gz",
+			"share_status":	0,
+			"pv":	1,
+			"url":	"http://192.168.213.128:80/group1/M00/00/00/wKjVgGDYNayAP7Y6AAGgNksKGEM.tar.gz",
+			"size":	106550,
+			"type":	"gz"
+		}]
+}
+[2021-06-28 10:03:09]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-06-28 10:03:09]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "9a2ead29182bf77c93ecfdf8aeb5ef2d",
+    "user": "zzc"
+}
+
+[2021-06-28 10:03:09]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2021-06-28 10:03:09]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2021-06-28 10:03:09]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "9a2ead29182bf77c93ecfdf8aeb5ef2d",
+    "user": "zzc"
+}
+
+[2021-06-28 10:03:09]--[src_cgi/myfiles_cgi.c:548]--user = zzc, token = 9a2ead29182bf77c93ecfdf8aeb5ef2d, start = 0, count = 1
+[2021-06-28 10:03:09]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'zzc' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2021-06-28 10:03:09]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"zzc",
+			"md5":	"8bbda9083bb20e64b0436ac29f56f277",
+			"time":	"2021-06-27 16:24:12",
+			"filename":	"cloud-disk.tar.gz",
+			"share_status":	0,
+			"pv":	1,
+			"url":	"http://192.168.213.128:80/group1/M00/00/00/wKjVgGDYNayAP7Y6AAGgNksKGEM.tar.gz",
+			"size":	106550,
+			"type":	"gz"
+		}]
+}
+[2021-06-28 10:19:24]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-06-28 10:19:24]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "78073da21153825a9328371ea07785fe",
+    "user": "zzc"
+}
+
+[2021-06-28 10:19:24]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2021-06-28 10:19:24]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2021-06-28 10:19:24]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "78073da21153825a9328371ea07785fe",
+    "user": "zzc"
+}
+
+[2021-06-28 10:19:24]--[src_cgi/myfiles_cgi.c:548]--user = zzc, token = 78073da21153825a9328371ea07785fe, start = 0, count = 1
+[2021-06-28 10:19:24]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'zzc' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2021-06-28 10:19:24]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"zzc",
+			"md5":	"8bbda9083bb20e64b0436ac29f56f277",
+			"time":	"2021-06-27 16:24:12",
+			"filename":	"cloud-disk.tar.gz",
+			"share_status":	0,
+			"pv":	1,
+			"url":	"http://192.168.213.128:80/group1/M00/00/00/wKjVgGDYNayAP7Y6AAGgNksKGEM.tar.gz",
+			"size":	106550,
+			"type":	"gz"
+		}]
+}
+[2021-06-28 10:19:43]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-06-28 10:19:43]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "78073da21153825a9328371ea07785fe",
+    "user": "zzc"
+}
+
+[2021-06-28 10:19:43]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2021-06-28 10:19:43]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2021-06-28 10:19:43]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "78073da21153825a9328371ea07785fe",
+    "user": "zzc"
+}
+
+[2021-06-28 10:19:43]--[src_cgi/myfiles_cgi.c:548]--user = zzc, token = 78073da21153825a9328371ea07785fe, start = 0, count = 1
+[2021-06-28 10:19:43]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'zzc' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2021-06-28 10:19:43]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"zzc",
+			"md5":	"8bbda9083bb20e64b0436ac29f56f277",
+			"time":	"2021-06-27 16:24:12",
+			"filename":	"cloud-disk.tar.gz",
+			"share_status":	0,
+			"pv":	1,
+			"url":	"http://192.168.213.128:80/group1/M00/00/00/wKjVgGDYNayAP7Y6AAGgNksKGEM.tar.gz",
+			"size":	106550,
+			"type":	"gz"
+		}]
+}
+[2021-06-28 10:22:02]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-06-28 10:22:02]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "c230f078e4b068bd9736c609e9b13abf",
+    "user": "zzc"
+}
+
+[2021-06-28 10:22:02]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2021-06-28 10:22:02]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2021-06-28 10:22:02]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "c230f078e4b068bd9736c609e9b13abf",
+    "user": "zzc"
+}
+
+[2021-06-28 10:22:02]--[src_cgi/myfiles_cgi.c:548]--user = zzc, token = c230f078e4b068bd9736c609e9b13abf, start = 0, count = 1
+[2021-06-28 10:22:02]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'zzc' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2021-06-28 10:22:02]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"zzc",
+			"md5":	"8bbda9083bb20e64b0436ac29f56f277",
+			"time":	"2021-06-27 16:24:12",
+			"filename":	"cloud-disk.tar.gz",
+			"share_status":	0,
+			"pv":	1,
+			"url":	"http://192.168.213.128:80/group1/M00/00/00/wKjVgGDYNayAP7Y6AAGgNksKGEM.tar.gz",
+			"size":	106550,
+			"type":	"gz"
+		}]
+}
+[2021-06-28 10:25:12]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-06-28 10:25:12]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "ce4bc6f16bf5775350973b119e6eabb8",
+    "user": "zzc"
+}
+
+[2021-06-28 10:25:12]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2021-06-28 10:25:12]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2021-06-28 10:25:12]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "ce4bc6f16bf5775350973b119e6eabb8",
+    "user": "zzc"
+}
+
+[2021-06-28 10:25:12]--[src_cgi/myfiles_cgi.c:548]--user = zzc, token = ce4bc6f16bf5775350973b119e6eabb8, start = 0, count = 1
+[2021-06-28 10:25:12]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'zzc' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2021-06-28 10:25:12]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"zzc",
+			"md5":	"8bbda9083bb20e64b0436ac29f56f277",
+			"time":	"2021-06-27 16:24:12",
+			"filename":	"cloud-disk.tar.gz",
+			"share_status":	0,
+			"pv":	1,
+			"url":	"http://192.168.213.128:80/group1/M00/00/00/wKjVgGDYNayAP7Y6AAGgNksKGEM.tar.gz",
+			"size":	106550,
+			"type":	"gz"
+		}]
+}
+[2021-06-28 10:48:57]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-06-28 10:48:57]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "1fdfbd4130fe78ab60831c88980c6fda",
+    "user": "zzc"
+}
+
+[2021-06-28 10:48:57]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2021-06-28 10:48:57]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2021-06-28 10:48:57]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "1fdfbd4130fe78ab60831c88980c6fda",
+    "user": "zzc"
+}
+
+[2021-06-28 10:48:57]--[src_cgi/myfiles_cgi.c:548]--user = zzc, token = 1fdfbd4130fe78ab60831c88980c6fda, start = 0, count = 1
+[2021-06-28 10:48:57]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'zzc' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2021-06-28 10:48:57]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"zzc",
+			"md5":	"8bbda9083bb20e64b0436ac29f56f277",
+			"time":	"2021-06-27 16:24:12",
+			"filename":	"cloud-disk.tar.gz",
+			"share_status":	0,
+			"pv":	1,
+			"url":	"http://192.168.213.128:80/group1/M00/00/00/wKjVgGDYNayAP7Y6AAGgNksKGEM.tar.gz",
+			"size":	106550,
+			"type":	"gz"
+		}]
+}
+[2021-06-28 11:06:58]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-06-28 11:06:58]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "cb9ffb14f7b056797e835bb4e451c51a",
+    "user": "zzc"
+}
+
+[2021-06-28 11:06:58]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2021-06-28 11:06:58]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2021-06-28 11:06:58]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "cb9ffb14f7b056797e835bb4e451c51a",
+    "user": "zzc"
+}
+
+[2021-06-28 11:06:58]--[src_cgi/myfiles_cgi.c:548]--user = zzc, token = cb9ffb14f7b056797e835bb4e451c51a, start = 0, count = 1
+[2021-06-28 11:06:58]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'zzc' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2021-06-28 11:06:58]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"zzc",
+			"md5":	"8bbda9083bb20e64b0436ac29f56f277",
+			"time":	"2021-06-27 16:24:12",
+			"filename":	"cloud-disk.tar.gz",
+			"share_status":	0,
+			"pv":	1,
+			"url":	"http://192.168.213.128:80/group1/M00/00/00/wKjVgGDYNayAP7Y6AAGgNksKGEM.tar.gz",
+			"size":	106550,
+			"type":	"gz"
+		}]
+}
+[2021-06-28 14:10:11]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-06-28 14:10:11]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "7c75f4a417d40d24d3d10335af32a968",
+    "user": "Sakura"
+}
+
+[2021-06-28 14:10:11]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="Sakura" 操作失败
+[2021-06-28 14:10:11]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2021-06-28 14:13:32]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-06-28 14:13:32]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "7c75f4a417d40d24d3d10335af32a968",
+    "user": "Sakura"
+}
+
+[2021-06-28 14:13:32]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="Sakura" 操作失败
+[2021-06-28 14:13:32]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2021-06-28 14:26:24]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-06-28 14:26:24]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "bb027f27424977397c70a0ca99ac5145",
+    "user": "Sakura"
+}
+
+[2021-06-28 14:26:24]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="Sakura" 操作失败
+[2021-06-28 14:26:24]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2021-06-28 14:37:51]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-06-28 14:37:51]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "c04c29454a99ec22cdec3b69621758b4",
+    "user": "Sakura"
+}
+
+[2021-06-28 14:37:51]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="Sakura" 操作失败
+[2021-06-28 14:37:51]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2021-06-28 14:37:58]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-06-28 14:37:58]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "fce65fe3f4d4638b653d20ef44bd7f30",
+    "user": "Sakura"
+}
+
+[2021-06-28 14:37:58]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="Sakura" 操作失败
+[2021-06-28 14:37:58]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2021-06-28 15:51:46]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-06-28 15:51:46]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "3e36f9d3fdba81142f58f6ccce5e195a",
+    "user": "Sakura"
+}
+
+[2021-06-28 15:51:46]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="Sakura" 操作失败
+[2021-06-28 15:51:46]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2021-06-28 15:59:24]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-06-28 15:59:24]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "c86e00149441b1bab5bfee8090988171",
+    "user": "Sakura"
+}
+
+[2021-06-28 15:59:24]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="Sakura" 操作失败
+[2021-06-28 15:59:24]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2021-06-28 16:02:53]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-06-28 16:02:53]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "e47c25a86efb14eb7820594bd679ec58",
+    "user": "Sakura"
+}
+
+[2021-06-28 16:02:53]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="Sakura" 操作失败
+[2021-06-28 16:02:53]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2021-06-28 16:03:22]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-06-28 16:03:22]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "e47c25a86efb14eb7820594bd679ec58",
+    "user": "Sakura"
+}
+
+[2021-06-28 16:03:22]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="Sakura" 操作失败
+[2021-06-28 16:03:22]--[src_cgi/myfiles_cgi.c:176]--line = 0

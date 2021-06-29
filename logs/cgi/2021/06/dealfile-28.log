@@ -1,0 +1,1 @@
+[2021-06-28 09:21:01]--[src_cgi/dealfile_cgi.c:42]--mysql:[user=root,pwd=zzc123,database=cloud_disk][2021-06-28 09:21:01]--[src_cgi/dealfile_cgi.c:47]--redis:[ip=127.0.0.1,port=6379]

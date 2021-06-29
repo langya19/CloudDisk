@@ -1,0 +1,10 @@
+[2021-06-28 14:10:07]--[src_cgi/reg_cgi.c:236]--buf = {
+    "email": "1442182454@qq.com",
+    "firstPwd": "e71dc5137306e66dac1b35a97d85a93e",
+    "nickName": "Sakura1221",
+    "phone": "13147174131",
+    "userName": "Sakura"
+}
+
+[2021-06-28 14:10:07]--[src_cgi/reg_cgi.c:128]--mysql_user = root, mysql_pwd = zzc123, mysql_db = cloud_disk
+[2021-06-28 14:10:07]--[src_cgi/reg_cgi.c:141]--user = Sakura, nick_name = Sakura1221, pwd = e71dc5137306e66dac1b35a97d85a93e, tel = 13147174131, email = 1442182454@qq.com
