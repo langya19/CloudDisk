@@ -371,93 +371,26 @@ END:
 /* -------------------------------------------*/
 int make_file_url(char *fileid, char *fdfs_file_url)
 {
-    int ret = 0;
+	//读取storage_web_server服务器的ip
+	char storage_web_server_ip[HOST_NAME_LEN] = {0};
+	get_cfg_value(CFG_PATH, "storage_web_server", "ip", storage_web_server_ip);
 
-    char *p = NULL;
-    char *q = NULL;
-    char *k = NULL;
+	//读取storage_web_server服务器的端口
+	char storage_web_server_port[20] = {0};
+	get_cfg_value(CFG_PATH, "storage_web_server", "port", storage_web_server_port);
+	
+	//拼接上传文件的完整url地址--->http://host_name/group1/M00/00/00/D12313123232312.png
+	strcat(fdfs_file_url, "http://");
+	strcat(fdfs_file_url, storage_web_server_ip);
+	strcat(fdfs_file_url, ":");
+	strcat(fdfs_file_url, storage_web_server_port);
+	strcat(fdfs_file_url, "/");
+	strcat(fdfs_file_url, fileid);
 
-    char fdfs_file_stat_buf[TEMP_BUF_MAX_LEN] = {0};
-    char fdfs_file_host_name[HOST_NAME_LEN] = {0};  //storage所在服务器ip地址
+	//printf("[%s]\n", fdfs_file_url);
+	LOG(UPLOAD_LOG_MODULE, UPLOAD_LOG_PROC, "file url is: %s\n", fdfs_file_url);
 
-    pid_t pid;
-    int fd[2];
-
-    //无名管道的创建
-    if (pipe(fd) < 0)
-    {
-        LOG(UPLOAD_LOG_MODULE, UPLOAD_LOG_PROC, "pip error\n");
-        ret = -1;
-        goto END;
-    }
-
-    //创建进程
-    pid = fork();
-    if (pid < 0)//进程创建失败
-    {
-        LOG(UPLOAD_LOG_MODULE, UPLOAD_LOG_PROC,"fork error\n");
-        ret = -1;
-        goto END;
-    }
-
-    if(pid == 0) //子进程
-    {
-        //关闭读端
-        close(fd[0]);
-
-        //将标准输出 重定向 写管道
-        dup2(fd[1], STDOUT_FILENO); //dup2(fd[1], 1);
-
-        //读取fdfs client 配置文件的路径
-        char fdfs_cli_conf_path[256] = {0};
-        get_cfg_value(CFG_PATH, "dfs_path", "client", fdfs_cli_conf_path);
-
-        execlp("fdfs_file_info", "fdfs_file_info", fdfs_cli_conf_path, fileid, NULL);
-
-        //执行失败
-        LOG(UPLOAD_LOG_MODULE, UPLOAD_LOG_PROC, "execlp fdfs_file_info error\n");
-
-        close(fd[1]);
-    }
-    else //父进程
-    {
-        //关闭写端
-        close(fd[1]);
-
-        //从管道中去读数据
-        read(fd[0], fdfs_file_stat_buf, TEMP_BUF_MAX_LEN);
-        //LOG(UPLOAD_LOG_MODULE, UPLOAD_LOG_PROC, "get file_ip [%s] succ\n", fdfs_file_stat_buf);
-
-        wait(NULL); //等待子进程结束，回收其资源
-        close(fd[0]);
-
-        //拼接上传文件的完整url地址--->http://host_name/group1/M00/00/00/D12313123232312.png
-        p = strstr(fdfs_file_stat_buf, "source ip address: ");
-
-        q = p + strlen("source ip address: ");
-        k = strstr(q, "\n");
-
-        strncpy(fdfs_file_host_name, q, k-q);
-        fdfs_file_host_name[k-q] = '\0';
-
-        //printf("host_name:[%s]\n", fdfs_file_host_name);
-
-        //读取storage_web_server服务器的端口
-        char storage_web_server_port[20] = {0};
-        get_cfg_value(CFG_PATH, "storage_web_server", "port", storage_web_server_port);
-        strcat(fdfs_file_url, "http://");
-        strcat(fdfs_file_url, fdfs_file_host_name);
-        strcat(fdfs_file_url, ":");
-        strcat(fdfs_file_url, storage_web_server_port);
-        strcat(fdfs_file_url, "/");
-        strcat(fdfs_file_url, fileid);
-
-        //printf("[%s]\n", fdfs_file_url);
-        LOG(UPLOAD_LOG_MODULE, UPLOAD_LOG_PROC, "file url is: %s\n", fdfs_file_url);
-    }
-
-END:
-    return ret;
+	return 0;
 }
 
 

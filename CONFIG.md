@@ -65,7 +65,13 @@
 客户端配置文件./conf/client.conf需要配置的项
 - base_path=/home/xxx/CloudDisk/fastdfs/client 日志文件保存路径
 - tracker_server=192.168.213.128:22122 tracker的IP和端口
+
+脚本文件fastfds.sh内也需要修改配置路径
 ## fastdfs-nginx-module 1.16
+obj/Makefile内需要添加两个头文件目录
+- -I /usr/include/fastdfs
+- -I /usr/include/fastcommon
+
 由于用的同一台主机，可直接编辑配置文件./conf/mod_fastdfs.conf，之后会被拷贝到/etc/fdfs目录下
 - base_path=/home/xxx/CloudDisk/fastdfs/storage
 - tracker_server=192.168.213.128:22122

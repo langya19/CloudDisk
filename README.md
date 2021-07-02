@@ -28,7 +28,12 @@
     >秒传：
 
 ## 演示
-
+![注册](./demo/register.png)
+![登录](./demo/login.png)
+![上传](./demo/upload.png)
+![下载](./demo/download.png)
+![分享](./demo/share_list.png)
+![传输列表](./demo/transfer.png)
 
 ## 目录树
 ```
@@ -102,6 +107,8 @@
 建议将项目放到home目录下，然后将配置文件与脚本文件中的路径替换成自己的用户名即可，也可参考CONFIG.md从头开始配置
 
 ## 服务器部署
+- 导入数据库表
+    登录数据库，用`create database cloud_disk;`新建一个空数据库cloud_disk，然后用`use cloud_disk;`进行切换,再用`srouce ./cloud_disk.sql;`导入
 - 生成可执行的cgi程序\
     在当前目录下执行make编译,src_cgi目录下的cgi程序编译后，生成的可执行文件放在bin_cgi目录下，执行ldd命令，检查动态链接库是否能找到
 - 修改配置文件\
