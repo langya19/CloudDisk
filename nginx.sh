@@ -10,7 +10,7 @@ fi
 
 case $1 in
     start)
-        sudo /usr/local/nginx/sbin/nginx -c ./conf/nginx.conf
+        sudo /usr/local/nginx/sbin/nginx
         if [ $? -eq 0 ];then
             echo "nginx start success ..."
         else

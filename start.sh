@@ -1,9 +1,9 @@
 #!/bin/bash
-# 拷贝nginx的配置文件nginx.conf到默认目录，可通过-c命令指定
-# echo ============= Copy nginx.conf =============
-# sudo mv /usr/local/nginx/conf/nginx.conf /usr/local/nginx/conf/nginx.conf.old
-# sudo cp ./conf/nginx.conf /usr/local/nginx/conf
-# echo
+# 拷贝nginx的配置文件nginx.conf到默认目录
+echo ============= Copy nginx.conf =============
+sudo mv /usr/local/nginx/conf/nginx.conf /usr/local/nginx/conf/nginx.conf.old
+sudo cp ./conf/nginx.conf /usr/local/nginx/conf
+echo
 
 # 拷贝nginx的fastdfs插件配置文件mod_fastdfs.conf到默认目录
 echo ============= Copy mod_fastdfs.conf =============

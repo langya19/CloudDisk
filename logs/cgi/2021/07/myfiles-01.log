@@ -1,0 +1,9 @@
+[2021-07-01 15:20:53]--[src_cgi/myfiles_cgi.c:40]--mysql:[user=root,pwd=zzc123,database=cloud_disk][2021-07-01 15:22:06]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2021-07-01 15:22:06]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "05dfce6c049cdc7c6d1f6c3e19be865f",
+    "user": "abc"
+}
+
+[2021-07-01 15:22:06]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="abc" 操作失败
+[2021-07-01 15:22:06]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2021-07-01 16:06:53]--[src_cgi/myfiles_cgi.c:40]--mysql:[user=root,pwd=zzc123,database=cloud_disk]

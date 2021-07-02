@@ -1,0 +1,11 @@
+[2021-07-01 15:22:06]--[src_cgi/login_cgi.c:288]--buf = {
+    "pwd": "e71dc5137306e66dac1b35a97d85a93e",
+    "user": "abc"
+}
+
+[2021-07-01 15:22:06]--[src_cgi/login_cgi.c:294]--user = abc, pwd = e71dc5137306e66dac1b35a97d85a93e
+[2021-07-01 15:22:06]--[src_cgi/login_cgi.c:101]--mysql_user = root, mysql_pwd = zzc123, mysql_db = cloud_disk
+[2021-07-01 15:22:06]--[src_cgi/login_cgi.c:161]--redis:[ip=127.0.0.1,port=6379]
+[2021-07-01 15:22:06]--[src_cgi/login_cgi.c:185]--tmp = abc82322393563
+[2021-07-01 15:22:06]--[src_cgi/login_cgi.c:201]--base64 = ckxNsI1WgBPt0RTdsh73HA==
+[2021-07-01 15:22:06]--[src_cgi/login_cgi.c:303]--token = 05dfce6c049cdc7c6d1f6c3e19be865f
