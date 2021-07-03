@@ -29,15 +29,15 @@
 
 ## 演示
 <p align="center">
-    <img src="./demo/register.png"><img src="./demo/login.png">
+    <img src="./demo/register.png" width = "320" ><img src="./demo/login.png" width = "320">
 </p>
 
 <p align="center">
-    <img src="./demo/upload.png"><img src="./demo/download.png">
+    <img src="./demo/upload.png" width = "320" ><img src="./demo/download.png" width = "320">
 </p>
 
 <p align="center">
-    <img src="./demo/transfer.png"><img src="./demo/share_list.png">
+    <img src="./demo/transfer.png" width = "320"><img src="./demo/share_list.png" width = "320">
 </p>
 
 ## 目录树
