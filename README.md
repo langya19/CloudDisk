@@ -28,17 +28,17 @@
     >秒传：
 
 ## 演示
-<figure class="half">
+<p align="center" class="half">
     <img src="./demo/register.png" width = "250" ><img src="./demo/login.png" width = "250">
-</figure>
+</p>
 
-<figure class="half">
+<p align="center" class="half">
     <img src="./demo/upload.png" width = "250" ><img src="./demo/download.png" width = "250">
-</figure>
+</p>
 
-<figure class="half">
+<p align="center" class="half">
     <img src="./demo/transfer.png" width = "250"><img src="./demo/share_list.png" width = "250">
-</figure>
+</p>
 
 ## 目录树
 ```
