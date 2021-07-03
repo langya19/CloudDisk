@@ -28,12 +28,20 @@
     >秒传：
 
 ## 演示
-![注册](./demo/register.png)
-![登录](./demo/login.png)
-![上传](./demo/upload.png)
-![下载](./demo/download.png)
-![分享](./demo/share_list.png)
-![传输列表](./demo/transfer.png)
+<figure class="half">
+    <img src="./demo/register.png" width = "300" height = "200">
+    <img src="./demo/login.png" width = "300" height = "200">
+</figure>
+
+<figure class="half">
+    <img src="./demo/upload.png" width = "300" height = "200">
+    <img src="./demo/download.png" width = "300" height = "200">
+</figure>
+
+<figure class="half">
+    <img src="./demo/transfer.png" width = "300" height = "200">
+    <img src="./demo/share_list.png" width = "300" height = "200">
+</figure>
 
 ## 目录树
 ```
