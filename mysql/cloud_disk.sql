@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.31, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.22, for Linux (x86_64)
 --
 -- Host: localhost    Database: cloud_disk
 -- ------------------------------------------------------
--- Server version	5.7.31
+-- Server version	5.7.22
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -39,7 +39,6 @@ CREATE TABLE `file_info` (
 
 LOCK TABLES `file_info` WRITE;
 /*!40000 ALTER TABLE `file_info` DISABLE KEYS */;
-INSERT INTO `file_info` VALUES ('8bbda9083bb20e64b0436ac29f56f277','group1/M00/00/00/wKjVgGDYNayAP7Y6AAGgNksKGEM.tar.gz','http://192.168.213.128:80/group1/M00/00/00/wKjVgGDYNayAP7Y6AAGgNksKGEM.tar.gz',106550,'gz',1);
 /*!40000 ALTER TABLE `file_info` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -86,7 +85,7 @@ CREATE TABLE `user` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `uq_nickname` (`nickname`),
   UNIQUE KEY `uq_name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -95,7 +94,6 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'zzc','sakura','e71dc5137306e66dac1b35a97d85a93e','11111111111','2021-06-27 16:22:03','abc@qq.com'),(2,'Sakura','Sakura1221','e71dc5137306e66dac1b35a97d85a93e','13147174131','2021-06-28 14:10:07','1442182454@qq.com');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -119,7 +117,6 @@ CREATE TABLE `user_file_count` (
 
 LOCK TABLES `user_file_count` WRITE;
 /*!40000 ALTER TABLE `user_file_count` DISABLE KEYS */;
-INSERT INTO `user_file_count` VALUES ('zzc',1);
 /*!40000 ALTER TABLE `user_file_count` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -146,7 +143,6 @@ CREATE TABLE `user_file_list` (
 
 LOCK TABLES `user_file_list` WRITE;
 /*!40000 ALTER TABLE `user_file_list` DISABLE KEYS */;
-INSERT INTO `user_file_list` VALUES ('zzc','8bbda9083bb20e64b0436ac29f56f277','2021-06-27 16:24:12','cloud-disk.tar.gz',0,1);
 /*!40000 ALTER TABLE `user_file_list` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -159,4 +155,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-07-01 13:26:05
+-- Dump completed on 2021-07-03  9:34:22
