@@ -28,16 +28,16 @@
     >秒传：
 
 ## 演示
-<p align="center" class="half">
-    <img src="./demo/register.png" width = "350" ><img src="./demo/login.png" width = "350">
+<p align="center">
+    <img src="./demo/register.png"><img src="./demo/login.png">
 </p>
 
-<p align="center" class="half">
-    <img src="./demo/upload.png" width = "350" ><img src="./demo/download.png" width = "350">
+<p align="center">
+    <img src="./demo/upload.png"><img src="./demo/download.png">
 </p>
 
-<p align="center" class="half">
-    <img src="./demo/transfer.png" width = "350"><img src="./demo/share_list.png" width = "350">
+<p align="center">
+    <img src="./demo/transfer.png"><img src="./demo/share_list.png">
 </p>
 
 ## 目录树
