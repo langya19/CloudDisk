@@ -99,7 +99,7 @@
 └── README.md
 ```
 ## 环境与配置
-- Ubuntu 16.04/Ubuntu 18.04/Ubuntu 20.04/Centos 7.6
+- Ubuntu 16.04以上/Centos 7.6以上
 - nginx 1.10.1 （同时用作web服务器和存储结点服务器）
 - fastcgi 2.4.1 （创建守护进程执行cgi程序）
 - spawn-fcgi 1.6.4 （对nginx收到的命令请求进行转发)
